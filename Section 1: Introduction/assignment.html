@@ -1,0 +1,42 @@
+<head>
+    <style>
+    #video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    heigth: auto;
+    }
+
+    video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .video-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    }
+
+    h1 {
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-family: Lato;
+    font-weight: 250;
+    font-size: 3rem;
+    }
+
+    </style>
+</head>
+<video loop muted autoplay id="video-background">
+    <source src="https://pixabay.com/videos/download/video-3998_medium.mp4?attachment"></source>
+</video>
+
+<div class="video-overlay"></div>
+<h1>My own responsive video background nice</h1>
